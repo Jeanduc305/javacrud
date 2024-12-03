@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.sakila</groupId>
+  <artifactId>SakilaCRUDProjectJean</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SakilaCRUDProject</name>
+  <description>CRUD application for sakila database using Hibernate</description>
+
+  <dependencies>
+    <!-- Dependencia de Hibernate Core -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.6.10.Final</version> <!-- Puedes usar la versión más reciente disponible -->
+    </dependency>
+    
+  <dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.15.2</version> <!-- Verifica la última versión -->
+</dependency>
+  
+
+    <!-- Dependencia para el conector JDBC de MySQL -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.29</version> <!-- Puedes usar la versión más reciente disponible -->
+    </dependency>
+
+    <!-- Dependencia para las anotaciones JPA (Java Persistence API) -->
+    <dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>javax.persistence-api</artifactId>
+      <version>2.2</version>
+    </dependency>
+
+    <!-- Dependencia de Log4j para logging -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.17.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.17.1</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Plugin para compilar el código -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>1.8</source> <!-- o la versión de Java que estás utilizando -->
+          <target>1.8</target> <!-- o la versión de Java que estás utilizando -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
